@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pizza Website Landing Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <div class="circle"></div>
+            <header>
+                <a href="#"><img src="logo.png"  class="logo"></a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Mood-Menu</a></li>
+                    <li><a href="#">Info</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textbox">
+                    <h2>Not an ordinary pizza<br>It's <span>Heavenly Pizza</span></h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                        has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
+                        took a galley of type and scrambled it to make a type specimen book. It has survived not 
+                        only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                         <a href="#">Learn More</a>
+                </div>
+                <div class="imgbox">
+                    <img src="img1.png" class="pizza">
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="thumb-1.png" onclick="imgSlider('img1.png')"></li>
+                <li><img src="thumb2.png" onclick="imgSlider('img2.png')"></li>
+                <li><img src="thumb3.png" onclick="imgSlider('img3.png')"></li>
+            </ul>
+            <ul class="sci">
+                 <li><a href="#"><img src="facebook.png"></a></li>
+                 <li><a href="#"><img src="twitter.png"></a></li>
+                 <li><a href="#"><img src="instagram.png"></a></li>
+            </ul>
+        </section>
+        <script type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector('.pizza').src= anything;
+            }
+        </script>
+    </body>
+</html>
